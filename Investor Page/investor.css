@@ -1,0 +1,215 @@
+body{font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* navigation bar */
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav {
+  width: 100%;
+  background-color: #170c53;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+nav .nav-cont {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 25%;
+  align-items: center;
+}
+
+nav .nav-cont h1.logo {
+  font-weight: 800;
+  color: white;
+  font-size: 25px;
+  padding-left: 25px;
+}
+
+nav .nav-cont .nav-items a h1 {
+  font-size: 16px;
+  opacity: 0;
+  color: white;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-cont .nav-items {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  text-align: center;
+}
+
+nav .nav-cont .nav-items a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+
+nav .nav-cont .nav-items a i {
+  font-size: 25px;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  width: 300px;
+  padding-right: 17px;
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  width: 91%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.662);
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  width: 260px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.share {
+  padding: 6px;
+  border: 0.1px solid gray;
+  border-radius: 25px;
+}
+
+.i {
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: rgb(232, 214, 214);
+}
+
+ .top-bar {
+    background-color:grey;
+    color: white;
+    text-align: start;
+    padding-top: 175px;
+    width: 350px;
+  
+    
+    
+    
+}
+
+.hero {
+    background-color: #0f4c75;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero .buttons button {
+    background-color: #3282b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero .description {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.objectives, .portal-summary, .cta {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.objectives h2, .portal-summary h2, .cta h2 {
+    text-align: center;
+    color: #0f4c75;
+}
+
+.objective-list, .summary-details, .cta-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.objective, .summary-item {
+    width: 45%;
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+#main-containner{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    padding: 125px;
+}
+#header-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+    
+}
+a:hover{
+  background-color:#f0f0f0;
+  color: black;
+}

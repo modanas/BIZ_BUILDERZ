@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 0;
+}
+ul,
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+nav {
+	width: 100%;
+	background-color: #170c53;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+}
+
+nav .nav-cont {
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	gap: 25%;
+	align-items: center;
+}
+
+nav .nav-cont h1.logo {
+	font-weight: 800;
+	color: white;
+	font-size: 25px;
+	padding-left: 25px;
+}
+
+nav .nav-cont .nav-items a h1 {
+	font-size: 16px;
+	opacity: 0;
+	color: white;
+	font-weight: 400;
+	transition: all 0.3s ease-in-out;
+}
+
+nav .nav-cont .nav-items {
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	gap: 52px;
+	text-align: center;
+}
+
+nav .nav-cont .nav-items a {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	flex-direction: column;
+}
+
+nav .nav-cont .nav-items a i {
+	font-size: 25px;
+	color: white;
+}
+
+.search-container {
+	display: flex;
+	width: 300px;
+	padding-right: 17px;
+	border-radius: 20px;
+}
+
+input[type="text"] {
+	width: 91%;
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+
+button {
+	padding: 10px;
+	background-color: white;
+	color: rgba(0, 0, 0, 0.662);
+	border: none;
+	cursor: pointer;
+}
+
+form {
+	width: 260px;
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.share {
+	padding: 6px;
+	border: 0.1px solid gray;
+	border-radius: 25px;
+}
+
+.i {
+	font-size: 30px;
+}
+
+button:hover {
+	background-color: rgb(232, 214, 214);
+}
+
+.container {
+    /* margin-top: 100px; */
+    position: absolute;
+    top: 6%;
+    left: 25%;
+	width: 50%;
+	margin: 50px auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.tabs {
+	display: flex;
+	justify-content: flex-start; /* Align tabs to the left */
+	margin-bottom: 20px;
+}
+
+.tab {
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease;
+	margin-right: 15px; /* Space between tabs */
+	text-align: left;
+}
+
+.tab.active {
+	color: #000;
+	border-bottom: 2px solid #000; /* Highlight the active tab */
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+.notification-item {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.notification-item img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%; /* Makes the image circular */
+	border: 2px solid #000; /* Adds a black border to the circle */
+	margin-right: 15px;
+}
+
+.notification-item .content {
+	flex: 1;
+}
+
+.notification-item .content p {
+	margin: 0 0 5px;
+}
+
+.notification-item .content span {
+	font-size: 12px;
+	color: #888;
+}

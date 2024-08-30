@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="job.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Job Listings - Upwork Style</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-cont">
+            <h1 class="logo">logo</h1>
+            <ul class="nav-items">
+                <a href="../Home Page/index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <!-- <h1>Home</h1> -->
+                  </a>
+          
+                  <a href="">
+                    <i class="fa-solid fa-building"></i>
+                    <!-- <h1>Startup_Management</h1> -->
+                  </a>
+          
+                  <a href="">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <!-- <h1>Startup</h1> -->
+                  </a>
+                  <a href="../Mentorship Page/mentorship.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <!-- <h1>Mentorship</h1> -->
+                  </a>
+          
+                  </a>
+                  <a href="../Investor Page/investor.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <!-- <h1>Investors</h1> -->
+                  </a>
+                  <a href="../Opportunity Page/Opp.html">
+                    <i class="fa-solid fa-rocket"></i>
+                    <!-- <h1>Opportunities</h1> -->
+                  </a>
+                  <a href="../Message Page/message.html">
+                    <i class="fa-solid fa-comment"></i>
+                    <!-- <h1>Message</h1> -->
+                  </a>
+                  <a href="../Notifications Page/notifcation.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- <h1>Notifications</h1> -->
+                  </a>
+                  <a href="../Profile Page/profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <!-- <h1>Profile</h1> -->
+                  </a>
+                  <a href="../Job Page/job.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <h1>Job</h1> -->
+                  </a>
+
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Collapsible Sidebar with filters -->
+        <aside class="sidebar">
+            <!-- Find Jobs Section -->
+            <div class="filter-section">
+                <button class="toggle-btn" data-section="job-filters">Find Jobs</button>
+                <div id="job-filters" class="sidebar-content collapsed">
+                    <label for="job-category">Category:</label>
+                    <select id="job-category">
+                        <option value="all">All Categories</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="design">Design</option>
+                        <option value="writing">Writing</option>
+                    </select>
+
+                    <label for="job-location">Location:</label>
+                    <input type="text" id="job-location" placeholder="Enter location...">
+
+                    <label for="job-type">Job Type:</label>
+                    <select id="job-type">
+                        <option value="all">All Types</option>
+                        <option value="fulltime">Full-Time</option>
+                        <option value="parttime">Part-Time</option>
+                        <option value="contract">Contract</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Hire Freelancers Section -->
+            <div class="filter-section">
+                <button class="toggle-btn" data-section="hire-filters">Hire Freelancers</button>
+                <div id="hire-filters" class="sidebar-content collapsed">
+                    <label for="hire-category">Category:</label>
+                    <select id="hire-category">
+                        <option value="all">All Categories</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="design">Design</option>
+                        <option value="writing">Writing</option>
+                    </select>
+
+                    <label for="hire-location">Location:</label>
+                    <input type="text" id="hire-location" placeholder="Enter location...">
+                </div>
+            </div>
+
+            <!-- Freelancers Section -->
+            <div class="filter-section">
+                <button class="toggle-btn" data-section="freelancer-filters">Freelancers</button>
+                <div id="freelancer-filters" class="sidebar-content collapsed">
+                    <label for="freelancer-category">Category:</label>
+                    <select id="freelancer-category">
+                        <option value="all">All Categories</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="design">Design</option>
+                        <option value="writing">Writing</option>
+                    </select>
+
+                    <label for="freelancer-location">Location:</label>
+                    <input type="text" id="freelancer-location" placeholder="Enter location...">
+                </div>
+            </div>
+        </aside>
+
+        <section class="job-listings">
+            <div class="job-listing">
+                <h3>Frontend Developer</h3>
+                <p>We are looking for an experienced frontend developer to join our team...</p>
+                <div class="job-details">
+                    <span>Category: Web Development</span>
+                    <span>Location: Remote</span>
+                    <span>Job Type: Full-Time</span>
+                </div>
+                <div class="job-requiremens">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Java Script</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-listing">
+                <h3>Graphic Designer</h3>
+                <p>A marketing agency is seeking a talented graphic designer...</p>
+                <div class="job-details">
+                    <span>Category: Design</span>
+                    <span>Location: New York, NY</span>
+                    <span>Job Type: Contract</span>
+                </div>
+                <div class="job-requiremens">
+                    <span>Adobe photoshop</span>
+                    <span>Graphic design</span>
+                    <span>Adobe Indesign</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-listing">
+                <h3>Content Writer</h3>
+                <p>Looking for a creative writer to produce high-quality blog content...</p>
+                <div class="job-details">
+                    <span>Category: Writing</span>
+                    <span>Location: Remote</span>
+                    <span>Job Type: Part-Time</span>
+                </div>
+                <div class="job-requiremens">
+                    <span>content writing</span>
+                    <span>Article writing</span>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </section>
+
+                <!-- Right Section with Search and Trending Jobs -->
+        <aside class="right-section">
+            <div class="search">
+                <input type="text" class="input" placeholder="Search for job">
+                <button class="btn">Search</button>
+            </div>
+            <div class="trending">
+                <h3>Trending Jobs:</h3>
+                <ul>
+                    <li>Backend Developer</li>
+                    <li>UI/UX Designer</li>
+                    <li>SEO Specialist</li>
+                </ul>
+            </div>
+            <div class="trending">
+                <h3>Trending Employees:</h3>
+                <ul>
+                    <li>Raju Singh</li>
+                    <li>Md Anas</li>
+                    <li>Ravi Singh</li>
+                </ul>
+            </div>
+            <div class="trending">
+                <h3>Trending Freshers:</h3>
+                <ul>
+                    <li>Harsh Shaw</li>
+                    <li>Rajani Prasad</li>
+                    <li>Sujit Yadav</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const section = document.getElementById(this.dataset.section);
+                section.classList.toggle('collapsed');
+            });
+        });
+    </script>
+
+</body>
+</html>

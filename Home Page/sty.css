@@ -1,0 +1,172 @@
+main {
+  width: 100%;
+}
+main .main-cont {
+  padding: 20px 0px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+main .main-cont .profile {
+  border: 1px solid rgb(165, 163, 163);
+  padding: 1rem;
+  width: 25%;
+}
+main .main-cont .profile .profile-picture {
+  background : url("https://w0.peakpx.com/wallpaper/75/243/HD-wallpaper-whatsapp-dp-black-cap-boy-cool-boy-cool-cowboy-flash-humor-negative-sunset.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main-cont .feed {
+  border: 1px solid grey;
+  padding: 1rem;
+  width: 50%;
+}
+main .main-cont .feed .input-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+main .main-cont .feed .input-wrapper .post-pic{
+  height : 60px;
+  margin-top: 10px;
+	width : 9%;
+	border : none;
+	border-radius: 50%;
+}
+main .main-cont .feed .input-wrapper input {
+  width: 91%;
+  border : 0.2px solid rgb(165, 157, 157);
+  border-radius: 40px;
+  padding: 1rem 0rem 3rem 1rem;
+}
+main .main-cont .feed .icons{
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  border : none;
+  margin-top: 8px;
+}
+main .main-cont .feed .icons button {
+ font-size: 20px;
+ border-radius: 44px;
+}
+main .main-cont .feed .icons button i {
+  border: 0.2px solid white;
+  padding: 4px;
+  color: rgb(116, 116, 205);
+  border : none;
+}
+main .main-cont .feed .post button {
+  width : 100%;
+  margin: 12px 0;
+	padding: 10px 15px;
+	background-color: #000;
+	color: white;
+	border: none;
+	cursor: pointer;
+  align-self: end;
+}
+main .main-cont .feed #feed-wrapper {
+  display: flex;
+  flex-direction: column
+}
+main .main-cont .feed #feed-wrapper div.post-wrapper {
+  min-height: 10vh;
+  background-color: rgb(245, 243, 243);
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+}
+main .main-cont .feed .create-post .icon {
+  margin-left: 90px;
+}
+main .main-cont .feed .create-post .icon .share {
+  padding: 10px;
+  margin : 10px 30px;
+}
+main .main-cont .feed .create-post .icon .share:hover{
+  font-size: 0.8rem;
+   background-color: rgb(231, 250, 243); 
+  text-transform: none;
+} 
+main .main-cont .feed .create-post .icon .share i{
+  margin-right: 10px;
+  padding: 0 4px;
+  font-size : 0.8rem;
+}
+main .main-cont .trending-cont {
+  min-height: 80vh;
+  border: 1px solid rgb(165, 163, 163);
+  padding: 1rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .main-cont .trending-cont .trending-box {
+  width: 100%;
+  min-height: 15vh;
+  background-color: rgb(232, 226, 226);
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=sty.css.map */
+
+main .main-cont .trending-cont .trending-box1 {
+  width: 100%;
+  min-height: 15vh;
+  background-color: rgb(232, 226, 226);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center
+}
+main .main-cont .trending-cont .trending-box1 .trend-1 {
+  display: flex;
+}
+main .main-cont .trending-cont .trending-box1 .trend {
+  border : 0.2px solid black;
+  border: none;
+}
+main .main-cont .trending-cont .trending-box1 .trend-1 img {
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
+  border: 0.1px solid black;
+  border-radius: 50%;
+}
+main .main-cont .trending-cont .trending-box1 .trend-merge {
+  display: flex;
+}
+main .main-cont .trending-cont .trending-box1 .trend-merge .trend-left .trend-1 p {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .main-cont .trending-cont .trending-box1 .trend-merge .trend-left .trend-1 .button {
+  margin : auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+main .main-cont .trending-cont .trending-box1 .trend-merge .trend-right .button .flw {
+  background-color: rgb(232,226,226);
+  font-size: 16px;
+  font-weight: bold;
+  height: 37px;
+  width: 37px;
+  /* background-color: rgb(72, 72, 181); */
+  color: black;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+main .main-cont .trending-cont .trending-box1 .trend-merge .trend-right .trend-1 .button .flw i {
+  font-weight: 900;
+}
+main .main-cont .trending-cont .trending-box1  .trend-merge .trend-right .flw:hover{
+	font-size: 18px;
+}

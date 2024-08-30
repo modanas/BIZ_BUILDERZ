@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-cont">
+            <h1 class="logo">logo</h1>
+
+            <ul class="nav-items">
+                <a href="../Home Page/index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <!-- <h1>Home</h1> -->
+                </a>
+
+                <a href="">
+                    <i class="fa-solid fa-building"></i>
+                    <!-- <h1>Startup_Management</h1> -->
+                </a>
+
+                <a href="">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <!-- <h1>Startup</h1> -->
+                </a>
+                <a href="../Mentorship Page/mentorship.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <!-- <h1>Mentorship</h1> -->
+                </a>
+
+                </a>
+                <a href="../Investor Page/investor.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <!-- <h1>Investors</h1> -->
+                </a>
+                <a href="../Opportunity Page/Opp.html">
+                    <i class="fa-solid fa-rocket"></i>
+                    <!-- <h1>Opportunities</h1> -->
+                </a>
+                <a href="../Message Page/message.html">
+                    <i class="fa-solid fa-comment"></i>
+                    <!-- <h1>Message</h1> -->
+                </a>
+                <a href="../Notifications Page/notifcation.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- <h1>Notifications</h1> -->
+                </a>
+                <a href="../Profile Page/profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <!-- <h1>Profile</h1> -->
+                </a>
+                <a href="../Job Page/job.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <h1>Job</h1> -->
+                </a>
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('all')">All</button>
+            <button class="tab" onclick="showTab('myposts')">My posts</button>
+            <button class="tab" onclick="showTab('mentions')">Mentions</button>
+        </div>
+        <div class="content-wrapper">
+            <div class="notifications">
+                <div id="all" class="tab-content active">
+                    <div class="notification-item">
+                        <img src="simarpreet.jpg" alt="Simarpreet Kaur">
+                        <div class="content">
+                            <p><strong>Simarpreet Kaur posted:</strong></p>
+                            <p>#jobseekers and #connections Currently hiring #nodejsdeveloper with 2+ years ex...</p>
+                            <span>2h</span>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <img src="yourposts.jpg" alt="Your Posts">
+                        <div class="content">
+                            <p><strong>Your posts got 22 impressions last week.</strong></p>
+                            <p>View your analytics.</p>
+                            <span>2h</span>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <img src="ayush.jpg" alt="Ayush Basak">
+                        <div class="content">
+                            <p><strong>Ayush Basak viewed your profile.</strong></p>
+                            <p>See all views.</p>
+                            <span>3h</span>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <img src="google.jpg" alt="Google for Developers">
+                        <div class="content">
+                            <p><strong>Google for Developers posted:</strong></p>
+                            <p>Ever tried to speed up development with more laptops and hands? 😁💻</p>
+                            <span>4h</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="myposts" class="tab-content">
+                    <!-- My posts content -->
+                </div>
+                <div id="mentions" class="tab-content">
+                    <!-- Mentions content -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="ok.js"></script>
+</body>
+
+</html>

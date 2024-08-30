@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./sty.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-cont">
+      <h1 class="logo">logo</h1>
+
+      <ul class="nav-items">
+        <a href="">
+          <i class="fa-solid fa-house"></i>
+          <!-- <h1>Home</h1> -->
+        </a>
+
+        <a href="">
+          <i class="fa-solid fa-building"></i>
+          <!-- <h1>Startup_Management</h1> -->
+        </a>
+
+        <a href="">
+          <i class="fa-solid fa-gamepad"></i>
+          <!-- <h1>Startup</h1> -->
+        </a>
+        <a href="../Mentorship Page/mentorship.html">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <!-- <h1>Mentorship</h1> -->
+        </a>
+
+        </a>
+        <a href="../Investor Page/investor.html">
+          <i class="fa-solid fa-briefcase"></i>
+          <!-- <h1>Investors</h1> -->
+        </a>
+        <a href="../Opportunity Page/Opp.html">
+          <i class="fa-solid fa-rocket"></i>
+          <!-- <h1>Opportunities</h1> -->
+        </a>
+        <a href="../Message Page/message.html">
+          <i class="fa-solid fa-comment"></i>
+          <!-- <h1>Message</h1> -->
+        </a>
+        <a href="../Notifications Page/notifcation.html">
+          <i class="fa-solid fa-bell"></i>
+          <!-- <h1>Notifications</h1> -->
+        </a>
+        <a href="../Profile Page/profile.html">
+          <i class="fa-solid fa-user"></i>
+          <!-- <h1>Profile</h1> -->
+        </a>
+        <a href="../Job Page/job.html">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <!-- <h1>Job</h1> -->
+        </a>
+      </ul>
+    </div>
+
+    <div class="search-container">
+      <form action="/search" method="GET">
+        <input type="text" placeholder="Search..." name="search">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-cont">
+
+      <section class="profile">
+        <div class="profile-picture"></div>
+        <div class="profile-info">
+          <div class="bio-details">
+            <h2 id="name">Md Anas</h2>
+            <h4 id="title">Full Stack Developer</h4>
+            <p id="description">Experienced in building modern web applications using JavaScript, React, and Node.js.
+              Passionate about creating seamless user experiences.</p>
+            <button class="update-btn" onclick="updateBio()">Update Bio</button>
+            <button class="update-btn">Followers</button>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div>
+          <h3>Rank</h3>
+        </div>
+        <div class="star-rating">
+          <span class="star" data-value="5">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="1">&#9733;</span>
+        </div>
+        <div id="rating-value">Level: 0</div>
+      </section>
+
+      <section class="feed">
+        <div class="create-post">
+          <!-- <textarea placeholder="Create a post..." id="text-area" ></textarea> -->
+          <div class="input-wrapper">
+            <img class="post-pic"
+              src="https://w0.peakpx.com/wallpaper/75/243/HD-wallpaper-whatsapp-dp-black-cap-boy-cool-boy-cool-cowboy-flash-humor-negative-sunset.jpg">
+            <input type="text" placeholder="create a post" id="input">
+          </div>
+
+          <div class="icons">
+            <button class="icons-btn"><i class="fa-solid fa-file-pdf"></i></button>
+            <button class="icons-btn"><i class="fa-solid fa-video"></i></button>
+            <button class="icons-btn"><i class="fa-solid fa-image"></i></button>
+          </div>
+
+          <div class="post">
+            <button id="post_btn">Post</button>
+          </div>
+
+          <div id="feed-wrapper">
+            <!-- <div class="post-wrapper">
+              <h1>post 1</h1>
+            </div> -->
+          </div>
+          <div class="icon">
+            <!-- <i id="i" class="fa-solid share fa-thumbs-up"></i>
+            <i id="i" class="fa-solid share fa-message"></i>
+            <i id="i" class="fa-brands share fa-telegram"></i> -->
+            <button class="share"><i id="i" class="fa-solid fa-thumbs-up"></i></button>
+            <button class="share"><i id="i" class="fa-solid fa-message"></i></button>
+            <button class="share"><i id="i" class="fa-brands fa-telegram"></i></button>
+          </div>
+      </section>
+
+      <section class="trending-cont">
+        <div class="trending-box1">
+          <h2>Trending Startup</h2>
+          <div class="trend-merge">
+            <div class="trend-left">
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Anas Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Ravi Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Sujit Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Rajani Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Harsh Company</p>
+
+              </div>
+            </div>
+            <div class="trend-right">
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="trending-box1">
+          <h2>Trending Mentors</h2>
+          <div class="trend-merge">
+            <div class="trend-left">
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Anas Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Ravi Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Sujit Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Rajani Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Harsh Company</p>
+
+              </div>
+            </div>
+            <div class="trend-right">
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="trending-box1">
+          <h2>Trending Investors</h2>
+          <div class="trend-merge">
+            <div class="trend-left">
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Anas Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Ravi Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Sujit Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Rajani Company</p>
+
+              </div>
+              <div class="trend-1">
+                <img src="" alt="">
+                <p>Harsh Company</p>
+
+              </div>
+            </div>
+            <div class="trend-right">
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+              <div class=button><button class="flw"><i class="fa-solid fa-plus"></i></button></div>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+  </main>
+  <!-- <script src="script.js"></script> -->
+</body>
+<!-- <script>
+  const stars = document.querySelectorAll('.star');
+  const ratingValue = document.getElementById('rating-value');
+
+  stars.forEach(star => {
+      star.addEventListener('click', () => {
+          const rating = star.getAttribute('data-value');
+          stars.forEach(s => s.classList.toggle('selected', s.getAttribute('data-value') <= rating));
+          ratingValue.textContent = `Rating: ${rating}`;
+      });
+  });
+</script> -->
+
+</html>

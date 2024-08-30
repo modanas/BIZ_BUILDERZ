@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Opp.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-cont">
+            <h1 class="logo">logo</h1>
+
+            <ul class="nav-items">
+                <a href="../Home Page/index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <!-- <h1>Home</h1> -->
+                </a>
+
+                <a href="">
+                    <i class="fa-solid fa-building"></i>
+                    <!-- <h1>Startup_Management</h1> -->
+                </a>
+
+                <a href="">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <!-- <h1>Startup</h1> -->
+                </a>
+                <a href="../Mentorship Page/mentorship.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <!-- <h1>Mentorship</h1> -->
+                </a>
+
+                </a>
+                <a href="../Investor Page/investor.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <!-- <h1>Investors</h1> -->
+                </a>
+                <a href="../Opportunity Page/Opp.html">
+                    <i class="fa-solid fa-rocket"></i>
+                    <!-- <h1>Opportunities</h1> -->
+                </a>
+                <a href="../Message Page/message.html">
+                    <i class="fa-solid fa-comment"></i>
+                    <!-- <h1>Message</h1> -->
+                </a>
+                <a href="../Notifications Page/notifcation.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- <h1>Notifications</h1> -->
+                </a>
+                <a href="../Profile Page/profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <!-- <h1>Profile</h1> -->
+                </a>
+                <a href="../Job Page/job.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <h1>Job</h1> -->
+                </a>
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- <div class="header">
+    <h1>OPPORTUNITY</h1>
+</div> -->
+
+    <div class="container">
+        <!-- Left-side navigation -->
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'events')">Events</button>
+            <button class="tab-link" onclick="openTab(event, 'challenges')">Challenges</button>
+            <button class="tab-link" onclick="openTab(event, 'investors')">Investors</button>
+            <button class="tab-link" onclick="openTab(event, 'mentorship')">Mentorship</button>
+        </div>
+
+        <!-- Right-side content -->
+        <div class="content">
+            <div id="events" class="tab-content active">
+                <h2>Events</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Events">
+                </div>
+                <div class="filter-section">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" placeholder="Enter location">
+                    <label for="event-type">Event Type:</label>
+                    <select id="event-type">
+                        <option value="webinar">Webinar</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="conference">Conference</option>
+                    </select>
+                </div>
+                <p>Upcoming Events will be listed here...</p>
+            </div>
+
+            <div id="challenges" class="tab-content">
+                <h2>Challenges</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Challenges">
+                </div>
+                <div class="filter-section">
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" placeholder="Enter industry">
+                    <label for="difficulty">Difficulty Level:</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <label for="deadline">Deadline:</label>
+                    <input type="date" id="deadline">
+                </div>
+                <p>Ongoing and Upcoming Challenges will be listed here...</p>
+            </div>
+
+            <div id="investors" class="tab-content">
+                <h2>Investors</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Investors">
+                </div>
+                <div class="filter-section">
+                    <label for="industry-focus">Industry Focus:</label>
+                    <input type="text" id="industry-focus" placeholder="Enter industry focus">
+                    <label for="investment-range">Investment Range:</label>
+                    <input type="text" id="investment-range" placeholder="Enter investment range">
+                    <label for="region">Region:</label>
+                    <input type="text" id="region" placeholder="Enter region">
+                </div>
+                <p>Investor profiles will be listed here...</p>
+            </div>
+
+            <div id="mentorship" class="tab-content">
+                <h2>Mentorship</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Mentors">
+                </div>
+                <div class="filter-section">
+                    <label for="expertise">Expertise Level:</label>
+                    <select id="expertise">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" placeholder="Enter availability">
+                </div>
+                <p>Mentor profiles will be listed here...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(event, tabName) {
+            let i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+
+        // Set default tab to "Events"
+        document.getElementById("events").style.display = "block";
+    </script>
+
+</body>
+
+</html>

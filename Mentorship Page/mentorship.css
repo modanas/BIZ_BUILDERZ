@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* navigation bar */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav {
+  width: 100%;
+  background-color: #170c53;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+nav .nav-cont {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 25%;
+  align-items: center;
+}
+
+nav .nav-cont h1.logo {
+  font-weight: 800;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 25px;
+}
+
+nav .nav-cont .nav-items a h1 {
+  font-size: 16px;
+  opacity: 0;
+  color: white;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-cont .nav-items {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  text-align: center;
+}
+
+nav .nav-cont .nav-items a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+
+nav .nav-cont .nav-items a i {
+  font-size: 25px;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  width: 300px;
+  padding-right: 17px;
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  width: 91%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.662);
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  width: 260px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.share {
+  padding: 6px;
+  border: 0.1px solid gray;
+  border-radius: 25px;
+}
+
+.i {
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: rgb(232, 214, 214);
+}
+#main-containner{
+  display: flex;
+  flex-direction: row;
+}
+#header{
+background-color: grey;
+color: white;
+display: flex;
+flex-direction: column;
+cursor: pointer;
+align-items: center;
+padding-top:125px ;
+margin-top: 0px;
+width: 100%;
+gap: 25px;
+}
+#img{
+    height: 100%;
+    width: 10px;
+    background-size: cover;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#second-part{
+  display: flex;
+  justify-content: space-evenly'
+}
+
+#right{
+  padding: 100px;
+  display: flex;
+  justify-content: flex-end;
+flex-direction: column;
+}
+
+#form{
+  display: flex;
+  gap: 20px;
+}
+
+#start-up{
+  background-color: #b499c7;
+  height: 80px;
+  width: 180px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#mentor{
+  background-color: orange;
+  height: 80px;
+  width: 180px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#third-part{
+  background-color: lightgrey;
+  display: flex;
+  gap: 100px;
+}
+    
+#video{
+  padding-top:10px ;
+  cursor: pointer;
+  z-index: 0;
+}
+
+#para2{
+  padding-left:25px ;
+}
+
+#para3{
+  line-height: 30px;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+  color:#5856d6 ;
+  text-align: center;
+}
+
+#forth-part{
+  background-color:#f8f9fa ;
+}
+
+#guide{
+  display: flex;
+}
+
+pre{
+  font-weight: 10000;
+  padding-right: 25px;
+}
+
+#fifth-part{
+  height: 350px;
+  width: 100%;
+  background-color: #c3bbfe;
+}
+.div{
+  height: 200px;
+  width: 200px;
+  border-radius: 1px solid black;
+  background-color:white;
+  display: inline-block;
+  padding-right:25px ;
+  margin-top: 20px;
+  margin-left: 150px;
+  
+}
+#div1{
+  background-image: url("image1.webp");
+  background-size: cover;
+}
+#div2{
+  background-image: url("images\ 2.jpeg");
+  background-size: cover;
+}
+#div3{
+  background-image: url("image4.jpeg");
+  background-size: cover;
+}
+#div4{
+  background-image: url("images.jpeg");
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  padding: 10px;
+  
+}
+
+.apply {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.apply:hover {
+  background-color: #2b8a2e;
+}
